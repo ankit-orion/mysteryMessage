@@ -18,6 +18,7 @@ export async function POST(request: Request){
                 message: "Username already exists"
             }, {status: 400})
         }
+
         // here we are checking if the email already exists or not if not then we are registering the4 user into our database
         // we habe to hash the passowrd before storing it in the database for securtiy purposes
         // for hasing we are using bcrypt library
